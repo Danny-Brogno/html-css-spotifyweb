@@ -93,7 +93,6 @@ main h1 {
 }
 
 .central-navig li:first-of-type {
-  /* debug */
   border-bottom: 1px solid #C8FF00;
 }
 
@@ -101,7 +100,7 @@ main h1 {
 /* ----------FOOTER---------- */
 
 footer {
-  width:100%;
+  width: 100%;
   background-color: #282828;
   z-index: 900px;
 }
@@ -109,5 +108,4 @@ footer {
 .prova {
   height: 50px;
   width: 100%;
-  background-color: purple;
 }
