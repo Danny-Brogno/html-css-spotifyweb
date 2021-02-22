@@ -27,7 +27,29 @@ a:hover {
   text-decoration: none;
 }
 
+
+/* --------------------------LEFT NAV SECTION-------------------------------- */
+
+.left-navig1 {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background-color: red;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /* ---------------MAIN----------------------- */
+
+.jumbo1 {
+  width: calc(100% - 200px);
+  height: calc(100% - 50px);
+}
 
 .transparent-top {
   width: 100%;
@@ -87,6 +109,6 @@ footer {
 
 .prova {
   height: 50px;
-  width: 50%;
-  background-color: red;
+  width: 100%;
+  background-color: purple;
 }
