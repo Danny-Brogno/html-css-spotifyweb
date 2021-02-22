@@ -101,7 +101,6 @@ main h1 {
 /* ----------FOOTER---------- */
 
 footer {
-  min-height: 100px;
   width:100%;
   background-color: #282828;
   z-index: 900px;
