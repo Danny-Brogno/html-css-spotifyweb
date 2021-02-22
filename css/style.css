@@ -17,7 +17,6 @@ ul {
 
 main {
   height: calc(100vh - 100px);
-  overflow: scroll;
 }
 
 a:link,
@@ -49,6 +48,8 @@ main::after {
 .jumbo1 {
   width: calc(100% - 200px);
   height: calc(100% - 50px);
+  overflow: auto;
+
 }
 
 .transparent-top {
