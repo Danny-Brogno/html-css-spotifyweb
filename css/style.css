@@ -73,8 +73,8 @@ main::after {
 }
 
 
-.lol a:first-of-type {
-  border-left: 1px solid #C8FF00;
+.second-line img:first-of-type {
+  border-left: 2px solid #C8FF00;
 }
 
 .third-line,
@@ -134,7 +134,7 @@ main h1 {
 }
 
 .central-navig li:first-of-type {
-  border-bottom: 1px solid #C8FF00;
+  border-bottom: 2px solid #C8FF00;
 }
 
 
