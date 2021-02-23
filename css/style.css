@@ -2,6 +2,7 @@
 
 body {
   background-color: #141922;
+  font-family: "Montserrat";
 }
 
 * {
@@ -32,13 +33,53 @@ a:hover {
   width: 200px;
   height: 100%;
   float: left;
-  background-color: green;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 main::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.db-img-rules {
+  width: 15%;
+}
+
+.first-line,
+.second-line,
+.third-line,
+.fourth-line {
+  margin-left: 20px;
+}
+
+#logo-spotify-danny {
+  font-size: 40px;
+  color: white;
+  padding-top: 20px;
+}
+
+.first-line span {
+  color: white;
+  font-size: 50%;
+  position: relative;
+  bottom: 10px;
+}
+
+.second-line {
+  padding-top: 30px;
+}
+
+
+.lol a:first-of-type {
+  border-left: 1px solid #C8FF00;
+}
+
+.third-line,
+.fourth-line {
+  padding-top: 10px;
 }
 
 
