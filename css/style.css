@@ -36,6 +36,7 @@ a:hover {
   background-color: black;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 main::after {
@@ -48,11 +49,45 @@ main::after {
   width: 15%;
 }
 
+.db-flex {
+  display: flex;
+}
+
 .first-line,
 .second-line,
 .third-line,
-.fourth-line {
+.fourth-line,
+.db-playlist1,
+.john-doe {
   margin-left: 20px;
+}
+
+.second-line span,
+.second-line span,
+.second-line span,
+.second-line span {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+
+.third-line span,
+.third-line span,
+.third-line span,
+.third-line span,
+.fourth-line span,
+.fourth-line span,
+.fourth-line span,
+.fourth-line span {
+  color: #717171;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+  top: 5px;
 }
 
 #logo-spotify-danny {
@@ -72,7 +107,6 @@ main::after {
   padding-top: 30px;
 }
 
-
 .second-line img:first-of-type {
   border-left: 2px solid #C8FF00;
 }
@@ -82,8 +116,97 @@ main::after {
   padding-top: 10px;
 }
 
+.fourth-line span {
+  white-space:nowrap
+}
 
-/* ---------------MAIN----------------------- */
+
+/* -------------------PLAYLIST----------------------- */
+
+.db-playlist1 {
+  flex-grow: 1;
+}
+
+.db-playlist1 h4 {
+  color: white;
+  padding: 30px 0px 20px 0px;
+}
+
+.square-playlist {
+  padding-bottom: 10px;
+}
+
+.square-playlist i {
+  font-size: 40px;
+}
+
+.square-playlist a {
+  color: #717171;
+}
+
+.square-playlist span {
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
+
+.db-playlist2 {
+  flex-grow: 1;
+}
+
+.db-playlist2 a {
+  line-height: 200%;
+}
+
+.db-playlist2 p {
+  color: #717171;
+}
+
+.john-doe {
+  color: white;
+}
+
+.john-doe div:first-of-type {
+  border-bottom: 1px solid #717171;
+  margin-right: 20px;
+  color: #717171;
+}
+
+.db-install {
+  display: flex;
+}
+
+.db-install i {
+  color: #717171;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.db-install h4 {
+  color: #717171;
+}
+
+.db-john {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.db-john img {
+  width: 15%;
+  background-color: grey;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.db-john h3 {
+  font-size: 15px;
+  color: white;
+  position:relative;
+  top: 5px;
+}
+
+/* -------------------------------------MAIN--------------------------------- */
 
 .jumbo1 {
   width: calc(100vw - 200px);
@@ -138,11 +261,36 @@ main h1 {
 }
 
 
-/* ----------FOOTER---------- */
+/* -----------------------------FOOTER--------------------------------------- */
 
 footer {
+  /* text-align: center; */
   width: 100%;
   height: 100px;
   background-color: #282828;
-  z-index: 900px;
+  display: flex;
+  justify-content: space-between;
 }
+
+footer div:first-of-type {
+  min-width: 200px;
+  /* debug */
+  color: red;
+  background-color: green;
+}
+
+footer div:nth-child(2) {
+  flex-grow: 1;
+    /* debug */
+  color: purple;
+  background-color: blue;
+}
+
+footer div:nth-child(3) {
+  min-width: 200px;
+  /* debug */
+  color: lime;
+  background-color: yellow;
+}
+
+/* ------------------------------------------------------------------------ */
