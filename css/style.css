@@ -3,6 +3,7 @@
 body {
   background-color: #141922;
   padding-top: 100px;
+  height: calc(100vh - 5vh);
 }
 
 * {
@@ -16,7 +17,7 @@ ul {
 }
 
 main {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 10%);
 }
 
 a:link,
@@ -47,13 +48,13 @@ main::after {
 
 .jumbo1 {
   width: calc(100% - 200px);
-  height: calc(100% - 50px);
+  height: 100%;
   overflow: auto;
 }
 
 .transparent-top {
   width: 100%;
-  height: 100px;
+  height: 10%;
   background-color: #080b12;
   opacity: 0.8;
   position: fixed;
@@ -101,11 +102,7 @@ main h1 {
 
 footer {
   width: 100%;
+  height: 10vh;
   background-color: #282828;
   z-index: 900px;
-}
-
-.prova {
-  height: 50px;
-  width: 100%;
 }
