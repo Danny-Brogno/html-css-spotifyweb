@@ -16,7 +16,6 @@ ul {
 }
 
 main {
-  width: calc(100vw - 200px);
   height: calc(100vh - 100px);
 }
 
@@ -211,8 +210,8 @@ main::after {
 /* -------------------------------------MAIN--------------------------------- */
 
 .jumbo1 {
+  width: calc(100% - 200px);
   height: 100%;
-  overflow: auto;
   padding-top: 100px;
 }
 
@@ -324,7 +323,7 @@ main h1 {
   background-image: url();
 }
 
-
+/* HOVER RULES */
 
 
 
