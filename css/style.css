@@ -274,8 +274,6 @@ footer {
 
 footer div:first-of-type {
   min-width: 200px;
-  /* debug */
-  background-color: transparent;
 }
 
 footer div:nth-child(2) {
@@ -283,9 +281,8 @@ footer div:nth-child(2) {
 }
 
 footer div:nth-child(3) {
-  min-width: 200px;
-  /* debug */
-  background-color: yellow;
+  max-width: 200px;
+  background-color: red;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -325,6 +322,35 @@ footer div:nth-child(3) {
   text-decoration: underline;
 }
 
-.db-sinister-text {
-  display: inline-block;
+.heart-folder a:link,
+.heart-folder a:visited,
+.heart-folder a:active,
+.heart-folder a:hover {
+  color: #717171;
+  position: relative;
+  right: 90px;
+}
+
+.heart-folder .lol {
+  padding-right: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.db-footer-central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.db-footer-right {
+  display: flex;
+  flex-flow: row;
+}
+
+.db-footer-right i {
+  padding-left: 10px;
+  margin-right: 10px;
 }
