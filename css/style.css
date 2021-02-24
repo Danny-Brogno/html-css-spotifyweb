@@ -264,7 +264,9 @@ main h1 {
   border-bottom: 2px solid #C8FF00;
 }
 
-/* --------------------MUSIC AND FILMS SECTION------------------------------ */
+/* ---------------MUSIC AND FILMS SECTION (inside JUMBO)-------------------- */
+
+/* FIRST LINE OF PICTURES */
 
 .db-heading {
   margin-left: 20px;
@@ -277,6 +279,8 @@ main h1 {
   background-color: red;
   border: 1px solid black;
   margin-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .db-space {
@@ -287,8 +291,43 @@ main h1 {
   color: white;
 }
 
+.db-text-line1 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  display: flex;
+}
 
+.db-undertext1 {
+  width: 13%;
+  height: 100%;
+  border: 1px solid black;
+  text-align: center;
+}
 
+.db-one1 {
+  background-image: url(../img/metal_lifting.jpg);
+}
+
+.db-two1 {
+  background-image: url(../img/stranger.jpeg);
+}
+
+.db-three1 {
+  background-image: url(../img/aquietplace.jpeg);
+}
+
+.db-four1 {
+  background-image: url(../img/split.jpeg);
+}
+
+.db-five1 {
+  background-image: url(../img/cure.jpeg);
+}
+
+.db-six1 {
+  background-image: url(../img/sinister.jpeg);
+}
 
 
 
@@ -302,7 +341,7 @@ footer {
   justify-content: space-between;
 }
 
-/* ------------------------------------------------------------------------ */
+/* --------------------------FOOTER 1-------------------------- */
 
 .db-footer-left {
   display: flex;
@@ -357,7 +396,7 @@ footer {
   left: 25px;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ----------------------------FOOTER 2-------------------------------- */
 
 .db-footer-central {
   display: flex;
@@ -384,7 +423,7 @@ footer {
   font-size: 30px;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ------------------------FOOTER 3--------------------------- */
 
 .db-footer-right {
   height: 100%;
