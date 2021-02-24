@@ -305,29 +305,29 @@ main h1 {
   text-align: center;
 }
 
-.db-one1 {
-  background-image: url(../img/metal_lifting.jpg);
+.db-one1 img,
+.db-two1 img,
+.db-three1 img,
+.db-four1 img,
+.db-five1 img,
+.db-six1 img {
+  width: 200px;
+  height: 200px;
 }
 
-.db-two1 {
-  background-image: url(../img/stranger.jpeg);
-}
-
-.db-three1 {
-  background-image: url(../img/aquietplace.jpeg);
-}
-
-.db-four1 {
-  background-image: url(../img/split.jpeg);
-}
-
-.db-five1 {
-  background-image: url(../img/cure.jpeg);
-}
-
+.db-one1,
+.db-two1,
+.db-three1,
+.db-four1,
+.db-five1,
 .db-six1 {
-  background-image: url(../img/sinister.jpeg);
+  background-image: url();
 }
+
+
+
+
+
 
 
 
