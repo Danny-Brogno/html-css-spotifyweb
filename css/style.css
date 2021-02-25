@@ -486,16 +486,6 @@ footer {
   align-self: center;
 }
 
-.jojo2 {
-  flex-grow: 1;
-  align-self: center;
-  width: 200px;
-  height: 5px;
-  background-color: grey;
-  margin: 0px 10px 0px 10px;
-  border-radius: 10px;
-}
-
 .jojo3 {
   align-self: center;
   color: white;
@@ -505,30 +495,41 @@ footer {
   color: white;
 }
 
+.jojo2 {
+  flex-grow: 1;
+  align-self: center;
+  width: 50%;
+  height: 5px;
+  background-color: grey;
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+}
+
 .line-on-line {
   width: 25%;
   height: 100%;
   background-color: white;
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
   display: none;
 }
 
-.line-on-line div {
+.ball {
   width: 17px;
   height: 17px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
   bottom: -6px;
-  left: 129px;
+  left: 95%;
   display: none;
 }
 
 /* HOVER RULES */
 
 .jojo2:hover .line-on-line,
-.jojo2:hover .line-on-line div {
+.jojo2:hover .ball {
   display: block;
 }
 
@@ -558,10 +559,53 @@ footer {
   color: #717171;
 }
 
-.db-volume1 {
-  width: 50px;
-  padding-right: 20px;
+.volume-bar {
+  width: 60px;
+  align-self: center;
+  height: 5px;
+  background-color: grey;
+  border-radius: 10px;
 }
+
+.turn-up-volume {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.advance {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -6px;
+  left: 95%;
+  display: none;
+}
+
+
+/* HOVER RULES */
+
+.volume-bar:hover .advance {
+  display: block;
+}
+
+.volume-bar:hover .turn-up-volume {
+  display: block;
+  background-color: #C8FF00;
+  border-radius: 10px;
+}
+
+
+
+
+
+
 
 /* -------------------------------MEDIA QUERY-------------------------------- */
 
