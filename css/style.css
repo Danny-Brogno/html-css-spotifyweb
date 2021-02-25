@@ -27,7 +27,7 @@ a:hover {
 }
 
 
-/* --------------------------LEFT NAV SECTION-------------------------------- */
+/* -------------LEFT NAV SECTION (BLACK SECTION ON THE LEFT)----------------- */
 
 .left-navig1 {
   width: 200px;
@@ -51,6 +51,7 @@ main::after {
 
 .db-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .first-line,
@@ -60,34 +61,30 @@ main::after {
 .db-playlist1,
 .john-doe {
   margin-left: 20px;
+  position: relative;
 }
 
 .second-line span,
+.third-line span,
+.fourth-line span {
+  position: absolute;
+  bottom: 4px;
+  left: 40px;
+}
+
 .second-line span,
-.second-line span,
-.second-line span {
+.third-line span,
+.fourth-line span {
   color: white;
   font-size: 15px;
   font-weight: bold;
-  position: relative;
-  left: 10px;
-  top: 5px;
 }
 
 .third-line span,
-.third-line span,
-.third-line span,
-.third-line span,
-.fourth-line span,
-.fourth-line span,
-.fourth-line span,
 .fourth-line span {
   color: #717171;
   font-size: 15px;
   font-weight: bold;
-  position: relative;
-  left: 10px;
-  top: 5px;
 }
 
 #logo-spotify-danny {
@@ -96,11 +93,19 @@ main::after {
   padding-top: 20px;
 }
 
-.first-line span {
+.first-line {
+  display: flex;
+}
+
+.first-line p,
+.first-line i {
   color: white;
-  font-size: 50%;
-  position: relative;
-  bottom: 10px;
+  display: inline;
+  font-size: 20px;
+}
+
+.first-line i {
+  font-size: 10px;
 }
 
 .second-line {
@@ -119,7 +124,6 @@ main::after {
 .fourth-line span {
   white-space:nowrap
 }
-
 
 /* -------------------PLAYLIST----------------------- */
 
@@ -207,7 +211,7 @@ main::after {
   top: 5px;
 }
 
-/* -------------------------------------MAIN--------------------------------- */
+/* ---------------------------JUMBOTRON--------------------------------- */
 
 .jumbo1 {
   width: calc(100% - 200px);
@@ -249,6 +253,8 @@ main::after {
 main h1 {
   color: white;
 }
+
+/* ----------THIS IS THE TEXT IN THE MIDDLE OF THE JUMBOTRON----------------- */
 
 .central-navig {
   display: flex;
@@ -489,18 +495,99 @@ footer {
 
 @media all and (max-width:552px) {
 
+/* JUMBOTRON */
+
+  .db-flex .box {
+    width: calc((100% / 2) - 20px);
+    height: calc((100% / 2) - 20px);
+    margin-left: 20px;
+  }
+
+  .jumbo1 {
+    width: calc(100% - 50px);
+  }
+
+  /* LEFT NAVIG 1 (BLACK LEFT SIDEBAR) */
+
+  .left-navig1 {
+    width: 50px;
+  }
+
+  .transparent-top {
+    left: 50px;
+  }
+
+  .square-playlist .db-hover-white,
+  .first-line p, .far.fa-copyright,
+  .db-playlist1 h4,
+  .fa-plus-square,
+  .db-hover-white,
+  .db-john h3 {
+    display: none;
+  }
+
+  .fa-spotify {
+    position: relative;
+    right: 15px;
+    top: 10px;
+    display: block;
+  }
+
+  .lallerolol {
+    width: 200px;
+    position: relative;
+    right: 10px;
+  }
+
+  .john-doe div:first-of-type,
+  .second-line img:first-of-type {
+    border: none;
+  }
+
+  .db-john img {
+    width: 100%;
+    position: relative;
+    right: 3px;
+    bottom: 5px;
+  }
+
+  .db-install .fa-arrow-circle-down {
+    font-size: 15px;
+    position: relative;
+    right: 1px;
+  }
+
+
 }
 
 /* ---------------------------------SMALL------------------------------------ */
 
 @media all and (min-width:553px) and (max-width:639px) {
 
+  /* JUMBOTRON */
+
+  .db-flex .box {
+    width: calc((100% / 2) - 20px);
+    height: calc((100% / 2) - 20px);
+    margin-left: 20px;
+  }
 }
 
 /* -------------------------------MEDIUM------------------------------------- */
 
 @media all and (min-width:640px) and (max-width:878px) {
 
+  /* JUMBOTRON */
+
+  /* nav.central-navig li {
+    width: calc((100% / 5) - 20px);
+    margin-left: 20px;
+  } */
+
+  .db-flex .box {
+    width: calc((100% / 4) - 20px);
+    margin-left: 20px;
+  }
 }
 
 /* -------------------------------LARGE------------------------------------- */
