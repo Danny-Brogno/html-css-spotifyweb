@@ -329,7 +329,7 @@ main h1 {
 
 .db-radius img,
 .container-dark:hover .db-einaudi {
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 /* HOVER RULES */
@@ -439,6 +439,14 @@ footer {
 
 .db-footer-central {
   display: flex;
+  width: 40%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.db-mp3-player {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -462,15 +470,78 @@ footer {
   transform: scale(1.3);
 }
 
-
 .far.player {
-  font-size: 30px;
+  font-size: 45px;
+}
+
+.jojoba {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+}
+
+.jojo1 {
+  align-self: center;
+}
+
+.jojo2 {
+  flex-grow: 1;
+  align-self: center;
+  width: 200px;
+  height: 5px;
+  background-color: grey;
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.jojo3 {
+  align-self: center;
+  color: white;
+}
+
+.jojoba a {
+  color: white;
+}
+
+.line-on-line {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.line-on-line div {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -6px;
+  left: 129px;
+  display: none;
+}
+
+/* HOVER RULES */
+
+.jojo2:hover .line-on-line,
+.jojo2:hover .line-on-line div {
+  display: block;
+}
+
+.jojo2:hover .line-on-line {
+  background-color: #C8FF00;
+  border-radius: 10px;
 }
 
 /* ------------------------FOOTER 3--------------------------- */
 
 .db-footer-right {
   height: 100%;
+  width: 10%;
   display: flex;
   align-items: center;
 }
@@ -487,6 +558,10 @@ footer {
   color: #717171;
 }
 
+.db-volume1 {
+  width: 50px;
+  padding-right: 20px;
+}
 
 /* -------------------------------MEDIA QUERY-------------------------------- */
 
