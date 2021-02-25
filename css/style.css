@@ -321,7 +321,8 @@ main h1 {
   color: #6c6f74;
 }
 
-.db-radius img {
+.db-radius img,
+.container-dark:hover .db-einaudi {
   border-radius: 100px;
 }
 
@@ -347,15 +348,21 @@ main h1 {
   display: block;
 }
 
-/* .container-dark .far {
+.container-dark .far {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 650;
+  display: none;
 }
 
-.db-test .far {
-} */
+.container-dark:hover .far {
+  display: block;
+}
 
 /* -----------------------------FOOTER--------------------------------------- */
 
@@ -472,4 +479,32 @@ footer {
 .db-footer-right a:active,
 .db-footer-right a:hover {
   color: #717171;
+}
+
+
+/* -------------------------------MEDIA QUERY-------------------------------- */
+
+
+/* ---------------------------EXTRA-SMALL----------------------------------- */
+
+@media all and (max-width:552px) {
+
+}
+
+/* ---------------------------------SMALL------------------------------------ */
+
+@media all and (min-width:553px) and (max-width:639px) {
+
+}
+
+/* -------------------------------MEDIUM------------------------------------- */
+
+@media all and (min-width:640px) and (max-width:878px) {
+
+}
+
+/* -------------------------------LARGE------------------------------------- */
+
+@media all and (min-width:879px) {
+
 }
