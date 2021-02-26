@@ -259,6 +259,7 @@ main h1 {
 .central-navig {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   color: white;
   padding: 50px 0px 50px 0px;
 }
@@ -676,7 +677,17 @@ footer {
     right: 1px;
   }
 
+  /* CENTRAL NAVIG (WORDS UNDERNEATH TRANSPARENT) */
 
+  /* FOOTER */
+
+  .db-footer-right {
+    width: 29%;
+  }
+
+  .db-footer-right .fa-list-ul, .fa-desktop, .fa-volume-up {
+    font-size: 12px;
+  }
 }
 
 /* ---------------------------------SMALL------------------------------------ */
@@ -690,27 +701,64 @@ footer {
     height: calc((100% / 2) - 20px);
     margin-left: 20px;
   }
+
+  /* CENTRAL NAVIG (WORDS UNDERNEATH TRANSPARENT) */
+
+  .central-navig h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* footer */
+
+  .db-mp3-player li {
+    width: 23%;
+  }
+
+  .db-footer-right {
+    width: 29%;
+  }
+
+  .db-footer-right .fa-list-ul, .fa-desktop, .fa-volume-up {
+    font-size: 12px;
+  }
 }
 
 /* -------------------------------MEDIUM------------------------------------- */
 
 @media all and (min-width:640px) and (max-width:878px) {
 
-  /* JUMBOTRON */
+  /* CENTRAL NAVIG (WORDS UNDERNEATH TRANSPARENT)*/
 
-  /* nav.central-navig li {
-    width: calc((100% / 5) - 20px);
-    margin-left: 20px;
-  } */
+  .central-navig h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  /* JUMBOTRON */
 
   .db-flex .box {
     width: calc((100% / 4) - 20px);
     margin-left: 20px;
   }
+
+  /* FOOTER */
+
+  .db-footer-right {
+    width: 20%;
+  }
+
+  .db-footer-right .fa-list-ul, .fa-desktop, .fa-volume-up {
+    font-size: 12px;
+  }
+
 }
 
 /* -------------------------------LARGE------------------------------------- */
 
 @media all and (min-width:879px) {
 
+  /* FOOTER */
+  .db-footer-right {
+    width: 20%;
+  }
 }
