@@ -608,6 +608,9 @@ footer {
 
 
 
+
+
+
 /* -------------------------------MEDIA QUERY-------------------------------- */
 
 
@@ -638,7 +641,8 @@ footer {
   }
 
   .square-playlist .db-hover-white,
-  .first-line p, .far.fa-copyright,
+  .first-line p,
+  .far.fa-copyright,
   .db-playlist1 h4,
   .fa-plus-square,
   .db-hover-white,
@@ -719,7 +723,9 @@ footer {
     width: 29%;
   }
 
-  .db-footer-right .fa-list-ul, .fa-desktop, .fa-volume-up {
+  .db-footer-right .fa-list-ul,
+  .fa-desktop,
+  .fa-volume-up {
     font-size: 12px;
   }
 }
@@ -757,8 +763,4 @@ footer {
 
 @media all and (min-width:879px) {
 
-  /* FOOTER */
-  .db-footer-right {
-    width: 20%;
-  }
 }
